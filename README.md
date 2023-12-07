@@ -151,8 +151,7 @@ Ahora vamos a decidir cómo queremos que se vea nuestra habitación de tareas. P
 
 ```tasks/templates/base.html```
 
-```
-html 
+```html 
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -172,8 +171,7 @@ html
 
 ```tasks/templates/post_list.html```
 
-```
-html
+```html
 {% extends 'base.html' %}
 
 {% block title %}ToDoApp - Task{% endblock %}
@@ -194,8 +192,7 @@ html
 ```tasks/templates/post_detail.html```
 
 
-```
-html
+```html
 {% extends 'base.html' %}
 
 {% block title %}ToDoApp - {{ post.title }}{% endblock %}
@@ -211,8 +208,7 @@ html
 
 ```tasks/static/tasks/style.css```
 
-```
-css
+```css
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
 
 body {
@@ -262,8 +258,7 @@ Este archivo CSS utiliza una fuente de Google Fonts llamada ‘Comfortaa’ para
 
 Ahora agregamos creamos los endpoints para estos templates. Asi que actualizamos el archivo `tasks/views.py` quedando ahora asi:
 
-```
-python
+```python
 from rest_framework import generics
 from .models import Task
 from .serializers import PostSerializer
