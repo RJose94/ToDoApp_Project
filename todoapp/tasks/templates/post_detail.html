@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}ToDoApp - {{ post.title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.description }}</p>
+    <p class="date">Published on {{ post.created_at }}</p>
+    <a href="{% url 'post-list' %}">Back to task</a>
+{% endblock %}
