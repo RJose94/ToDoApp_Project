@@ -75,7 +75,7 @@ python manage.py makemigrations tasks
 
 ```
 
-# Despues, ejecuta el soigueinte comando, se generarán las migraciones para crear la tabla en la base de datos
+# Despues, ejecuta el sigueinte comando, se generarán las migraciones para crear la tabla en la base de datos
 python manage.py migrate
 ```
 Ahora revisa la base de datos `db.sqlite3` y observa si ya se encuentran creadas las tablas
